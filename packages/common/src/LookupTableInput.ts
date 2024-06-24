@@ -9,6 +9,8 @@ export type LookupTableInput = {
   usageUnit: string
   vCpus?: string
   machineType?: string
+  usageAmount?: string
+  cost?: string
 }
 
 export type LookupTableOutput = {
