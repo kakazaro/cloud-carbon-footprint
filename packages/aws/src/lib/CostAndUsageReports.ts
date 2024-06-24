@@ -395,7 +395,6 @@ export default class CostAndUsageReports {
       timestamp: rowData.timestamp,
       cost: rowData.cost,
       usageUnit: rowData.usageUnit,
-      usageType: rowData.usageType,
     }
     const unknownConstants: CloudConstants = {
       kilowattHoursByServiceAndUsageUnit:
