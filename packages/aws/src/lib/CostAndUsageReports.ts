@@ -194,8 +194,8 @@ export default class CostAndUsageReports {
         inputDataRow.usageType,
         inputDataRow.usageUnit,
         inputDataRow.vCpus != '' ? parseFloat(inputDataRow.vCpus) : null,
-        parseFloat(inputDataRow.usageAmount || '1') || 1,
-        parseFloat(inputDataRow.cost || '1') || 1,
+        parseFloat(inputDataRow.usageAmount?.toString() || '1'),
+        parseFloat(inputDataRow.cost.toString() || '1'),
         {},
       )
       const dateTime = new Date().toISOString()
